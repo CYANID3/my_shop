@@ -1,6 +1,8 @@
 import React, {Fragment, useEffect} from 'react';
 import {Route, Switch} from "react-router-dom";
-import Frontend from "./containers/Frontend/Frontend";
+// import Frontend from "./containers/Frontend/Frontend";
+import MainPage from "./containers/Frontend/MainPage/MainPage";
+import Mens from "./containers/Frontend/Mens/Mens";
 import Dashboard from "./containers/Dashboard/Dashboard";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Login from "./components/Login/Login";
@@ -25,7 +27,8 @@ function App() {
 
         <Switch>
           <Layout>
-            <Route exact path="/" component={Frontend}/>
+            <Route exact path="/" component={MainPage}/>
+            <Route exact path="/mens" component={Mens}/>
             <Route exact path="/login" component={Login}/>
           <PrivateRoute path="/dashboard" component={Dashboard} isAuth={isAuth}/>
           </Layout>
