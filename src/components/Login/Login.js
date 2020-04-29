@@ -18,7 +18,7 @@ const Login = ({history}) => {
   };
 
   useEffect(() => {
-    if (isAuth) history.push('/dashboard');
+    if (isAuth) history.push(history.location.from.state.pathname);
   }, [isAuth, history]);
 
   if (loading) {
@@ -30,7 +30,7 @@ const Login = ({history}) => {
   }
 
   return (
-      <Grid textAlign='center' style={{height: '30%', paddingTop: '15%'}} verticalAlign='middle'>
+      <Grid textAlign='center' style={{height: '100vh'}} verticalAlign='middle'>
         <Grid.Column style={{maxWidth: 450}}>
           <Header as='h2' color='teal' textAlign='center'>
             Форма авторизации

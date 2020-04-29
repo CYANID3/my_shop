@@ -4,14 +4,16 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from "react-router-dom";
 import {applyMiddleware, combineReducers, compose, createStore} from "redux";
-import authReducer from "./store/reducers/authReducer";
 import {Provider} from "react-redux";
 import thunk from "redux-thunk";
+import authReducer from "./store/reducers/authReducer";
+import goodsReducer from "./store/reducers/goodsReducer";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-  auth: authReducer
+  auth: authReducer,
+  goods: goodsReducer
 });
 
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
