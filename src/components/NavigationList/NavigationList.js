@@ -28,7 +28,7 @@ const NavigationList = () => {
         <li className="NavigationItem">
           <NavLink to="/collections">Collections</NavLink>
         </li>
-      <Button className="ADMIN">
+      <Button inverted color="black" className="ADMIN">
              <NavLink to="/dashboard">Admin-panel</NavLink>
       </Button>
       </ul>

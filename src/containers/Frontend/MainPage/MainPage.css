@@ -1,0 +1,34 @@
+.Banner {
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+}
+.Banner-content {
+    padding-top: 5%;
+    margin-left: 50%;
+}
+.Banner-description {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 90%;
+}
+.Mini-banner-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+}
+.Mini-banner {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50%;
+    height: 300px;
+    background-color: grey;
+}
+.Mini-banner-content {
+    margin-top: 40px;
+    padding-left: 30px;
+}
+.Mini-banner-description {
+    width: 90%;
+    margin-bottom: 50px;
+}
